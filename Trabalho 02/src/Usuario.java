@@ -35,10 +35,10 @@ public class Usuario {
        System.out.println("-----------");
        
        
-       Interface.dadosFuncionario(Luiza);
-       Interface.dadosFuncionario(Pedro);
-       Interface.dadosFuncionario(Anna);
-       Interface.dadosFuncionario(Jonathan);
+       Luiza.dadosFuncionario(Luiza);
+       Pedro.dadosFuncionario(Pedro);
+       Anna.dadosFuncionario(Anna);
+       Jonathan.dadosFuncionario(Jonathan);
        
     }
     

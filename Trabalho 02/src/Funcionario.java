@@ -54,4 +54,9 @@ public class Funcionario {
     public double salarioLiquido(){
         return salario-deducoes;
     }      
+    
+    public void dadosFuncionario(Funcionario funcionario){
+        System.out.println("\nMatricula: " + funcionario.getMatricula() + "\n" + "Nome: " + funcionario.getNome() + "\n" + "Salario: " + funcionario.getSalario() + "\n" + "Deducao: " + funcionario.getDeducoes());
+        
+    }
 }

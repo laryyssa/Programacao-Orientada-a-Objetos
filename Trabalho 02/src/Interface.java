@@ -8,7 +8,7 @@
  * @author larys
  */
 public class Interface {
-    public static void dadosFuncionario(Gerente gerente){
+    /*public static void dadosFuncionario(Gerente gerente){
         System.out.println("Nome: " + gerente.getNome());
         System.out.println("Matricula: " + gerente.getMatricula());
         System.out.println("Salario bruto: " + gerente.getSalario());
@@ -26,7 +26,7 @@ public class Interface {
         System.out.println("Deducoes: " + funcionario.getDeducoes());
         System.out.println("---------------");
     }
-    
+    */
     public static void salarioLiquido(Funcionario funcionario){
         System.out.println("Salario Liquido de "+ funcionario.getNome() + ": "+ funcionario.salarioLiquido());
  

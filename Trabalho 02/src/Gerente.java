@@ -41,5 +41,12 @@ public class Gerente extends Funcionario{
             return 1.20*salarioLiquido();
         }
     }   
-            
+      
+    
+    public void dadosFuncionario(Gerente gerente){
+        super.dadosFuncionario(gerente);
+        System.out.println("Categoria: " + gerente.getCategoria() + "\n" + "Departamento: " + gerente.getDepartamento());
+        
+    }
+    
 }
