@@ -36,17 +36,22 @@ public class Gerente extends Funcionario{
         
     public double salarioLiquido(int categoria){
         if(categoria == 1){
-            return 1.10*salarioLiquido();
+            return 1.10*super.salarioLiquido();
         }else{
-            return 1.20*salarioLiquido();
+            return 1.20*super.salarioLiquido();
         }
     }   
       
-    
-    public void dadosFuncionario(Gerente gerente){
-        super.dadosFuncionario(gerente);
-        System.out.println("Categoria: " + gerente.getCategoria() + "\n" + "Departamento: " + gerente.getDepartamento());
+    @Override
+    public void dadosFuncionario(){
+        super.dadosFuncionario();
+        System.out.println("Categoria: " + this.getCategoria() + "\n" + "Departamento: " + this.getDepartamento());
         
     }
+    
+    //public void salarioLiquido(){
+      //  System.out.println("Salario Liquido de "+ this.getNome() + ": "+ this.salarioLiquido(this.getCategoria()));
+ 
+    //}
     
 }

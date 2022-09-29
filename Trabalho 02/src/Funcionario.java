@@ -10,7 +10,7 @@
 public class Funcionario {
     private int matricula;
     private String nome;
-    private double salario;
+    private double salarioBruto;
     private double deducoes;
     
     public Funcionario(){
@@ -19,7 +19,7 @@ public class Funcionario {
     public Funcionario(int matricula, String nome, double salario, double deducoes){
         this.matricula = matricula;
         this.nome = nome;
-        this.salario = salario;
+        this.salarioBruto = salario;
         this.deducoes = deducoes;
     }
     
@@ -37,11 +37,11 @@ public class Funcionario {
         this.nome = nome;
     }
     
-    public double getSalario(){
-        return salario;
+    public double getSalarioBruto(){
+        return salarioBruto;
     }
     public void setSalario(int salario){
-        this.salario = salario;
+        this.salarioBruto = salario;
     }
     
     public double getDeducoes(){
@@ -52,11 +52,13 @@ public class Funcionario {
     }
             
     public double salarioLiquido(){
-        return salario-deducoes;
+        return this.salarioBruto - this.deducoes;
     }      
     
-    public void dadosFuncionario(Funcionario funcionario){
-        System.out.println("\nMatricula: " + funcionario.getMatricula() + "\n" + "Nome: " + funcionario.getNome() + "\n" + "Salario: " + funcionario.getSalario() + "\n" + "Deducao: " + funcionario.getDeducoes());
+    public void dadosFuncionario(){
+        System.out.println("\nMatricula: " + this.getMatricula() + "\n" + "Nome: " + this.getNome() + "\n" + "Salario Bruto: " + this.getSalarioBruto() + "\n" + "Deducao: " + this.getDeducoes());
         
     }
+    
+    
 }
