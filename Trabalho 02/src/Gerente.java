@@ -8,22 +8,22 @@
  * @author larys
  */
 public class Gerente extends Funcionario{
-    private String categoria;
+    private int categoria;
     private String departamento;
     
     public Gerente(){
         
     }
-    public Gerente (int matricula, String nome, double salario, double deducoes, String categoria, String departamento){
+    public Gerente (int matricula, String nome, double salario, double deducoes, int categoria, String departamento){
         super(matricula, nome, salario, deducoes);
         this.categoria = categoria;
         this.departamento = departamento;
     }
     
-    public String getCategoria(){
+    public int getCategoria(){
         return categoria;
     }
-    public void setCategoria(String categoria){
+    public void setCategoria(int categoria){
         this.categoria = categoria;
     }
     
@@ -34,8 +34,8 @@ public class Gerente extends Funcionario{
         this.departamento = departamento;
     }
         
-    public double salarioLiquido(String categoria){
-        if(categoria == "1"){
+    public double salarioLiquido(int categoria){
+        if(categoria == 1){
             return 1.10*salarioLiquido();
         }else{
             return 1.20*salarioLiquido();
