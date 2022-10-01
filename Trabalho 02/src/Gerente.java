@@ -34,8 +34,8 @@ public class Gerente extends Funcionario{
         this.departamento = departamento;
     }
         
-    public double salarioLiquido(int categoria){
-        if(categoria == 1){
+    public double salarioLiquido(){
+        if(this.categoria == 1){
             return 1.10*super.salarioLiquido();
         }else{
             return 1.20*super.salarioLiquido();
@@ -45,7 +45,7 @@ public class Gerente extends Funcionario{
     @Override
     public void dadosFuncionario(){
         super.dadosFuncionario();
-        System.out.println("Categoria: " + this.getCategoria() + "\n" + "Departamento: " + this.getDepartamento());
+        System.out.println("Categoria: " + this.getCategoria() + "\nDepartamento: " + this.getDepartamento());
         
     }
     

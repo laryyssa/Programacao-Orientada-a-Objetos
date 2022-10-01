@@ -22,10 +22,10 @@ public class Usuario {
     public static void main(String[] args) {  
  
        
-       Funcionario Luiza = new Funcionario(1200, "Luiza", 8500.00, 20.00);
+       Funcionario Luiza = new Funcionario(1200, "Luiza", 1000.00, 80.00);
        Funcionario Pedro = new Funcionario(1201, "Pedro", 8500.00, 35.00);
-       Gerente Anna = new Gerente(1202, "Anna", 12000.00, 100.00, 1, "RH");
-       Gerente Jonathan = new Gerente(1203, "Jonathan", 10000.00, 230.00, 2, "Projetos");
+       Gerente Anna = new Gerente(1202, "Anna", 1000.00, 80.00, 1, "RH");
+       Gerente Jonathan = new Gerente(1203, "Jonathan", 1000.00, 80.00, 2, "Projetos");
        
        System.out.println("Salario liquido da Luiza: "+ Luiza.salarioLiquido());
        System.out.println("Salario liquido do Pedro: "+ Pedro.salarioLiquido());
